@@ -1,22 +1,27 @@
 import Link from "next/link";
 import React from "react";
-import logo from "@/public/1.jpg";
+import logo from "@/public/LOGO SKODAB 03.png";
 import Image from "next/image";
 export default function Navbars() {
   return (
-    <nav className="flex justify-between items-center  px-4 absolute top-0 left-0 right-0 z-10 ">
+    <nav className="flex  justify-between items-center  px-4  top-2 left-0 right-0 z-10 sticky bg-white rounded-full ">
       <div>
         {/* LOGO */}
-        <h1 className="text-2xl font-bold">Logo</h1>
+        <Image
+          src={logo}
+          alt="logo"
+          width={100}
+          height={100}
+          className="w-30"
+        />
       </div>
       {/* Menu */}
       <ul className="flex gap-4">
-        <Link href={"/"}>Breanda</Link>
-        <Link href={"/prestasi"}>Prestasi</Link>
-        <Link href={"/visi_misi"}>Visi dan Misi</Link>
-        <Link href={"/guru_staff"}>Guru dan Staff</Link>
-        <Link href={"/fasilitas"}>Fasilitas</Link>
-        <Link href={"/profile_sekolah"}>Profile Sekolah</Link>
+        <Link href={"/"}>Beranda</Link>
+        <Link href={"/Pages/Prestasi.jsx"}>Prestasi</Link>
+        <Link href={"/GuruStaff"}>Guru dan Staff</Link>
+        <Link href={"/Fasilitas"}>Fasilitas</Link>
+        <Link href={"/ProfileSekolah"}>Profile Sekolah</Link>
       </ul>
     </nav>
   );
