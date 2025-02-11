@@ -76,8 +76,8 @@ const guru = [
 ];
 export default function GuruStaff() {
   return (
-    <section className="flex  justify-center items-center mx-auto   text-center space-y-10 max-w-xl ">
-      <div className="grid grid-cols-3 gap-4 shadow-2xl ">
+    <section className="flex  justify-center items-center mx-auto text-center space-y-10 max-w-[900px] ">
+      <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4 shadow-2xl rounded-lg p-10">
         {guru.map((guru) => (
           <div key={guru.id}>
             <Image src={guru.image} alt={guru.name} />

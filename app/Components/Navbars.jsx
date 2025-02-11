@@ -12,11 +12,11 @@ export default function Navbars() {
           alt="logo"
           width={100}
           height={100}
-          className="w-30"
+          className="w-20"
         />
       </div>
       {/* Menu */}
-      <ul className="flex gap-4">
+      <ul className="gap-4 hidden md:flex">
         <Link href={"/"}>Beranda</Link>
         <Link href={"/Pages/Prestasi.jsx"}>Prestasi</Link>
         <Link href={"/GuruStaff"}>Guru dan Staff</Link>

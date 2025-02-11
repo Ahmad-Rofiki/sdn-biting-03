@@ -7,7 +7,7 @@ export default function Prestasi() {
       <h1 className="flex justify-center items-center mx-auto mt-32 text-5xl font-semibold">
         Prestasi
       </h1>
-      <div className="grid grid-cols-3 gap-4 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-10">
         <div className="shadow-2xl p-5">
           <Image src={pramuka} alt="prestasi" className="rounded-xl" />
           <h1 className="text-2xl font-semibold">Pramuka</h1>
